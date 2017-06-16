@@ -9,7 +9,7 @@ npm install --save-dev mocha
 echo "installing lodash"
 npm install --save lodash
 echo "Setup mocha to be run with npm \"test\" command"
-sed -i '' 's/echo \\\"Error: no test specified\\\" && exit 1/mocha test/g' ./package.json
+sed -i '' 's/echo \\\"Error: no test specified\\\" && exit 1/mocha specs/g' ./package.json
 echo "Github stuff"
 echo "node_modules" >> .gitignore
 git init
